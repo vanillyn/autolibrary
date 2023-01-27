@@ -1,4 +1,4 @@
-const csvFilePath='../library.csv'
+const csvFilePath='library.csv'
 const csv=require('csvtojson')
 csv()
 .fromFile(csvFilePath)
