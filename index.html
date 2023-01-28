@@ -7,9 +7,9 @@
     <body>
         <div id="content">
             <script>
-                const jsn = fetch('https://raw.githubusercontent.com/vanillyn/autolibrary/main/library.json')
+                const js = fetch('https://raw.githubusercontent.com/vanillyn/autolibrary/main/library.json')
+                const jsn = js.body.json()
                 const json = Object.entries(jsn)
-                const jstring = Array.toString(json)
                 console.log(`${json}`);
                 // const div = document.getElementById("content");
                 // div.innerHTML = div.innerHTML + `<p>${json.Name}</p>`
